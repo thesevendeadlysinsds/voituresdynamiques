@@ -1,0 +1,51 @@
+.content {
+    position: relative;
+    width: 100%; /* Utilisation de 100% de la largeur du conteneur */
+    height: 100%; /* Utilisation de 100% de la hauteur du conteneur */
+  }
+
+  .move {
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 250px;
+    transform: translate(-50%, -50%); /* Centre horizontalement et verticalement */
+    transition: left 0.01s ease-in-out; /* Animation de transition pour le mouvement horizontal */
+    cursor: pointer;
+    animation: moveCar 2s linear infinite paused;
+  }
+  .move-rotate {
+    width: 75px;
+    margin-left: 48px;
+    transform-origin: center center;
+    margin-top: 175px;
+  }
+  .move-rotate1 {
+    width: 75px;
+    margin-left: 267px;
+    transform-origin: center center;
+  }
+  hr {
+    margin-top: -5px;
+  border: 0 dashed;
+  height: 5px;
+  background-color: black;
+  }
+  button {
+    cursor: pointer;
+  }
+  body {
+  overflow-x: hidden; /* Masquer la barre de défilement horizontale */
+  }
+  .cursor-pointer {
+    cursor: pointer;
+    width: 100%;
+  }
+  .camion-specific {
+    margin-left: 75px;
+    margin-top: 160px;
+    width: 70px;
+}
+.camion-specific1 {
+    width: 65px;
+    margin-left: 254px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="elbogoss.png">
+  <title>Animation Voiture</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<header>
+  <nav><a href="http://www.electricite.html-5.me">Mon site principal</a></nav>
+</header>
+<body>
+  <div class="container">
+    <div class="content">
+      <img src="voiture.png" alt="Voiture" class="move" onclick="showMessage('Voiture fonctionnant à l\'hydrogène, sans émission de gaz à effet de serre')">
+    </div>
+  </div>
+  <div class="content">
+    <img src="elbogoss.png" alt="vnbcvbhc" class="move-rotate"> <img src="elbogoss.png" alt="ughilutg" class="move-rotate1">
+    <hr onclick="showMessage('Voici la route')" class="cursor-pointer">
+  </div><br>
+
+  <label for="speedInput">Vitesse du véhicule:</label>
+  <input type="number" id="speedInput" value="0" min="-7" max="7" oninput="checkInputValue(this)"> <br> <br>
+
+  <div class="display-flex">
+    <button onclick="moveBackward()">reculer <kbd>ArrowLeft</kbd></button>
+    <button onclick="neutral()">Point mort <kbd>ArrowDown</kbd></button>
+    <button onclick="moveForward()">avancer <kbd>ArrowRight</kbd></button>
+    <button onclick="resetButton()">Réinitialiser</button>
+  </div>
+  <p id="message"></p>
+  <button onclick="hideMessage()">Cacher le message</button><br>
+  <select name="hand" id="hand-select" onchange="changeImage()" required>
+    <option value="">Choisissez un conducteur</option>
+    <option value="conducteur">conducteur</option>
+    <option value="isolant">isolant</option>
+    <option value="camion">camion</option>
+</select>
+  <p>La radio c'est trés simple pour mettre la radio, vous pouvez choisir un fichier audio sur votre ordinateur ou en prendre sur internet en mettant l'URL. Ensuite cliquez sur le boutton "Charger l'audio"</p><br>
+  <input type="file" id="audioInput" accept=".mp3, .ogg, .wav"><br><br>
+  <input type="text" id="audioURL" placeholder="Entrez l'URL audio"><br><br>
+  <audio id="myAudio" controls></audio><br><br>
+  <button onclick="loadAudioFromURL()">Charger l'audio</button>
+  <button id="toggleButton">Allumer/Éteindre la radio</button>
+
+  <script src="main.js"></script>
+</body>
+</html>
